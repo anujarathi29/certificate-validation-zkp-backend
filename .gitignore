@@ -1,0 +1,17 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+*.zkey
+circuits/circuit_js
+/circuits/challenge_phase2_0003
+/circuits/response_phase2_0003
+/circuits/pot14_final.ptau
+/circuits/pot18_final.ptau
+
+# Hardhat files
+cache
+artifacts
+

@@ -1,0 +1,14 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "circomlib": "^2.0.5",
+    "express": "^4.18.2",
+    "hardhat-circom": "^3.3.2",
+    "mongoose": "^7.4.3"
+  }
+}
