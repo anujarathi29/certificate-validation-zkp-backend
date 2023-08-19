@@ -9,6 +9,7 @@
     "circomlib": "^2.0.5",
     "express": "^4.18.2",
     "hardhat-circom": "^3.3.2",
-    "mongoose": "^7.4.3"
+    "mongoose": "^7.4.3",
+    "mongoose-auto-increment": "^5.0.1"
   }
 }
