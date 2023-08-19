@@ -1,19 +1,18 @@
-pragma circom 2.0.0;
+pragma circom 2.0.6;
 
-include "../node_modules/circomlib/circuits/sha256/sha256.circom";
+include "../node_modules/circomlib/circuits/poseidon.circom";
 
 
 template Hasher(){
     signal input recipient_id;
-    signal input issuer;
-    signal output hash[256];
+    signal input issuer_id;
+    signal output hash;
+    
+    component poseidon = Poseidon(2);
+    poseidon.inputs[0] <== recipient_id;
+    poseidon.inputs[1] <== issuer_id;
+    hash <== poseidon.out; 
 
-    component hasher = Sha256(2);
-    hasher.in[0] <== recipient_id;
-    hasher.in[1] <== issuer;
-    for (var i = 0; i<256; i++){
-        hash[i] <== hasher.out[i];
-    }
 }
 
 component main = Hasher();
