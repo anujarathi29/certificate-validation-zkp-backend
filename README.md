@@ -1,6 +1,6 @@
 # Internship Assignment Task: Certificate Verification - Using Zero Knowledge Proof (Backend)
 
-## Dependencies Required
+## Dependencies
 
 1. Nodejs
 2. Mongodb 
@@ -37,7 +37,7 @@ __Once the dependencies are installed, you can use following instructions to run
 1. Clone the project:
 
 ```sh
-git clone 
+git clone https://github.com/anujarathi29/certificate-validation-zkp-backend.git
 ```
 
 2. Start mongo service:
